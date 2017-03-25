@@ -1,41 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> Grace Hopper </title>
-  </head>
-  <body>
-    <header style="font-size:3em"> Grace Hopper </header><br>
-      <div style="font-size:2em">
-        Bio
-      </div>
-      <div><br>
-        Grace Murry Hopper nacio en Nueva York el 9 de Diciembre de 1906, en el seno de  una familia en la que los
-        consideraba que los varones y las mujeres debian tener las mismas oportunidades.
-      </div>
-      <ul>
-        <li>Cocinar</li>
-        <li>Programar</li>
-          <ul>
-            <li>Javascript </li>
-            <li>Ruby</li>
-            <li>Java</li>
-          </ul>
-        <li>Enseñar</li>
-      </ul>
-      <div style="font-size:2em">
-        3 Sueños que  tengo
-      </div>
-        <ol>
-          <li>Viajar por el mundo.</li>
-          <li>Ver a Laboratoria en todos los paises</li>
-          <li>Que  todos aprendan a codear</li>
-        </ol>
-        <div align = "right">
-
-        <img src = "Grace_Hopper.jpg">
-        </div>
-
-
-  </body>
+    <head>
+    <meta chaster"utf-8">
+    <title> Formulario </title> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">    
+    </head>
+    <body style="background-color:#880E4F;
+                 font-family: 'Raleway', sans-serif;
+                 color:white">
+        
+        <h1> Ejercicio 1</h1>
+        <form>
+            <h3> Nombre:</h3>
+        <input type="text" value ="Nombre" required/>
+            <h3>Apellido:</h3>
+        <input type="text" value ="Apellido" required/>
+            <h3>Telefono:</h3>
+        <input type="text"/>     
+            <h3>Email</h3>
+        <input type="email"/>
+            <h3>Password:</h3>
+        <input type="password" name ="pw" pattern=".{6,}" title="Tienes que ingresar 6 o más caracteres" required/>   
+            <h3>Pelicula favorita:</h3>
+        <select value="Color favorito" required="">
+          <option value="">Star Wars</option>
+          <option value="">Star Trek</option>
+          <option value="">Guardians of The Galaxy </option>
+        </select><br>
+        <input type="submit" value="Enviar"/>    
+            
+        </form>
+    </body>
 </html>
