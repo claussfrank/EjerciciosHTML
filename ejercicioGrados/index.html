@@ -3,19 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title> Convierte  los Grados :) </title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
   </head>
-  <body>
-  <script src= "ejercicioGrados.js"></script>
-    <header style="font-size:3em">Convierte los Grados</header><br>
-    <table border "0">
-      <tr>
-      <td> Fahrenheit </td>
-      <td><input type ="text" id ="farenheit"/></td>
-      <td><button type ="button" onclick ="convertirCelsius();">Conver to Celsius </button></td>
-    </tr>
+    
+  <body style="background:#4527A0;
+               font-family:Raleway;
+               color:white">
+      
+  <script src= "ejercicioGrados.js"></script>    
+  <header style="font-size:3em;
+                 text-align:center">Convierte los Grados</header><br>
+    
+    <h1>Convierte de Fahrenheit a Celsius</h1>
     <table>
-      <label> Resultados en Celsius </label>
-      <input type= "text" id ="resultadoCelcius">
-
+      <tr>
+          <td> Fahrenheit </td>
+          <td><input type ="text" id ="farenheit"/></td>
+          <td><button type ="button" onclick ="convertirCelsius();">Conver a Celsius </button></td>
+      </tr>
+    </table>
+    <h3>Resultado</h3><input type ="text" id ="resultadoCelcius"/>  
+    
+    <h1>Convierte de Celsius a Fahrenheit</h1>    
+    <table>
+        <td> Clesius </td>
+        <td><input type= "text" id ="celsius"/></td>
+        <td><button type ="button" onclick="convertirFahrenheit();"/>Conver a Fahrenheit</td>
+    </table>
+    <h3>Resultado</h3><input type ="text" id ="resultadoFahrenheit"/>  
   </body>
 </html>
